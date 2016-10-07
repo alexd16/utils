@@ -275,7 +275,7 @@ module Hanami
       #   end
       #
       #   Signup.new.call # => NoMethodError
-      def call
+      def call(*args)
         _call { super }
       end
     end
